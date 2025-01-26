@@ -1,0 +1,6 @@
+﻿{
+  "FullName": "WShopFix",
+  "Description": "A fix for a vulnerability present in the 'WShop_UI' mod (2183584447)",
+  "Version": 1.0,
+  "MinApiVersion": 3.51
+}

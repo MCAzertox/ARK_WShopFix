@@ -1,0 +1,59 @@
+{
+  "TestMode" : false,
+  "Database" : {
+    "MysqlHost": "localhost",
+    "MysqlPort": 3306,
+    "MysqlUser": "arkplugins",
+    "MysqlPass": "LLFsepewA8BoQxq",
+    "MysqlDB": "ark_plugins",
+    "Table" : "PlayerStats"
+  },
+  "Commands" : {
+    "MyStats": {
+      "enabled": true,
+      "command": "/mystats",
+      "notification": {
+        "content": [
+          "Your statistics",
+          "Playtime = {playtime}",
+          "Tames killed = {tamesKilled}",
+          "Players killed = {playersKilled}",
+          "Deaths = {deathsToPlayers}"
+        ],
+        "color": {
+          "red": 0.25,
+          "green": 0.25,
+          "blue": 0.0
+        }
+      }
+    },
+    "Stats": {
+      "enabled": true,
+      "command": "/stats",
+      "lines": 10,
+      "helper": {
+        "content" : [
+          "Please provide a valid statistic id <0-3>",
+          " 0 - Playtime",
+          " 1 - Tames killed",
+          " 2 - Players killed",
+          " 3 - Deaths to players"
+        ],
+        "color" : {
+          "red": 0.25,
+          "green": 0.0,
+          "blue": 0.0
+        }
+      },
+      "notification": {
+        "title" : "Leaderboard for {statType}",
+        "message" : "#{place} | {playerName} : {value}",
+        "color": {
+          "red": 0.839,
+          "green": 0,
+          "blue": 1
+        }
+      }
+    }
+  }
+}
